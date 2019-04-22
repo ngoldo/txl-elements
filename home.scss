@@ -2,6 +2,10 @@
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
 @import "@material/image-list/mdc-image-list";
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
 
 .home {
   display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
@@ -30,13 +34,38 @@
   height: 120px;
 }
 
-.three-line-list .img {
+.three-line-list .list-item__image {
   width: 64px;
   margin-right: 16px;
   height: 80px;
 }
 
-.img img {
+.list-item__image img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.bottom-bar {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;;
+}
+
+.bottom-navigation {
+  font-size: .75rem; // 12sp
+  line-height: 1.25rem; // 20sp
+  letter-spacing: calc(.4 / (.75 * 16) * 1em);
+  line-height: 2.25rem;
+  font-weight: 400;
+  text-transform: none;
+  height: 64px;
+}
+
+.bottom-navigation .mdc-tab__text-label {
+  padding-bottom: 8px;
+}
+
+.bottom-navigation .mdc-tab__icon {
+  padding-top: 16px;
 }
