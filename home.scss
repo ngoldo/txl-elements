@@ -6,6 +6,7 @@
 @import "@material/tab-scroller/mdc-tab-scroller";
 @import "@material/tab-indicator/mdc-tab-indicator";
 @import "@material/tab/mdc-tab";
+@import "@material/elevation/mdc-elevation";
 
 .home {
   display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
@@ -49,7 +50,8 @@
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  width: 100%;;
+  width: 100%;
+  z-space: 1;
 }
 
 .bottom-navigation {
@@ -59,7 +61,7 @@
   line-height: 2.25rem;
   font-weight: 400;
   text-transform: none;
-  height: 64px;
+  height: 56px;
 }
 
 .bottom-navigation .mdc-tab__text-label {
@@ -67,5 +69,5 @@
 }
 
 .bottom-navigation .mdc-tab__icon {
-  padding-top: 16px;
+  padding-top: 8px;
 }
